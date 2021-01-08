@@ -1,384 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>Bridge School of Languages</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom fonts for this template -->
-    <link href="static/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link
+      href="static/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.min.css" rel="stylesheet" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-</head>
+    <style>
+      .carousel-indicators .active {
+        background-color: #06c025;
+      }
+      .carousel-indicators .li {
+        background-color: #44f161;
+      }
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2306c025' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+      }
 
-<body id="page-top">
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2306c025' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+      }
+    </style>
+  </head>
 
+  <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Bridge School of Languages</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Location</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          >Bridge School of Languages</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Location</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Header -->
     <header class="masthead">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Bridge School of Languages!</div>
-                <div class="intro-heading text-uppercase">WE HAVE PASSION FOR LANGUAGES!!</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-            </div>
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">
+            Welcome To Bridge School of Languages!
+          </div>
+          <div class="intro-heading text-uppercase">
+            WE HAVE PASSION FOR LANGUAGES!!
+          </div>
+          <a
+            class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+            href="#services"
+            >Tell Me More</a
+          >
         </div>
+      </div>
     </header>
 
     <!-- Services -->
     <section class="page-section" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">What you would get at Bridge.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3>About Our Language Courses</h3>
-                    <P>
-                        Bridge School of Languages offer different language courses that are interestingly delivered by professional teachers who are native speakers of the language targeted by customers.
-                        We provide both local and foreign languages to our students efficiently and effectively. Our curriculum focuses on reading, writing, vocabulary building, listening and speaking skills. We have an interactive teaching method that allows students develop their communicative skill in a fair amount of time.
-                        Bridge has four different class structures along with different time and price package that can easily allow students to choose the type of class they prefer, the time schedule that suits them with a price package they can afford.
-                    </P>
-                    <h3>List of Our Language Courses</h3> 
-                    <p>
-                        ~English: General English, English for Email, Academic English, Business English, English for Hospitality <br>
-                        ~French <br>
-                        ~Spanish <br>
-                        ~Amharic <br>
-                        ~Afan-Oromo <br>
-                        ~Tigrigna <br>
-                        ~Exam Preparation Programs (IELTS, SAT, TOEFL) <br>
-                        ~Junior Programs: Reading Challenge Programs
-                    </p>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Services</h2>
+          <h3 class="section-subheading text-muted">
+            What to expect from Bridge?
+          </h3>
+        </div>
+      </div>
 
-                </div>
-                <div class="col-lg-6">
-                    <h3>Bridge’s four different Class Structures.</h3>
-                    <P>
-                        <strong>1)Personal Class: </strong> -a one-to-one class structure where an individual student and a teacher communicate directly and attend in the learning and teaching process.
-                        -Personal classes are highly recommended for people who’d like to customize their schedules. It’s also convenient for people who prefer direct communication with their teacher and seek for special attention. People with a tight schedule and a busy life style usually find this class very suitable.
-                        <br> <strong>2)Group Class: </strong>-a class of minimum six and maximum twenty students and is a highly recommended form of language class since its interactive and helps students develop their communicative skill in an adequate amount of time. Group classes are diverse since different people from different places attend them and this creates a nice , vibrant atmosphere where people can actively learn.It’s provided three times a week (Mondays, Wednesdays and Fridays) for one and a half hour a day .
-                        <br> <strong>3)Small Groups: </strong> -gatherings of minimum three and maximum five students and are preferable for people who enjoy learning in a less crowded atmosphere and for group of friends, families or colleagues who’d like to learn a new language together.
-                        <br> <strong>4)Online Classes: </strong> - a class held online using virtual learning methods. It allows students to learn from where they are without having to come to school. It’s a very convenient method nowadays due to people’s tight schedule and recently due to the pandemic.
-                        </P>
-                </div>
-            </div>
-            <div class="row text-center" style="margin-top: 30px;">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div
+          class="carousel-inner"
+          style="
+            background-color: #f8f9fa;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 60px;
+            padding-bottom: 60px;
+          "
+        >
+          <div class="carousel-item active" style="align-content: center">
+            <h3>About Our Language Courses</h3>
+            <p>
+              Bridge School of Languages offers different language courses that
+              are interestingly delivered by professional teachers. 
+              <ul>
+                <li> Most are native speakers of the language targeted by customers.</li>
+                <li>We provide both local and foreign languages to our students
+                efficiently and effectively. </li> 
+                <li>Our curriculum focuses on reading, writing, vocabulary building, listening and speaking skills. </li> <li>We
+                        have an interactive teaching method that allows students to
+                        develop their communicative skill in a fair amount of time.</li>  
+                <li>Bridge has four different class structures along with different time and
+                        price packages that can easily allow students to choose the type
+                        of class they prefer and the time schedule that suits them with a
+                        price package they can afford.</li>  
+                <br>* Abay and Alex are teaching English, but are not native speakers.
+            </ul>
+            </p>
+          </div>
+          <div class="carousel-item" style="align-content: center">
+            <h3>List of Our Language Courses</h3>
+            <p>
+                <ul>
+              <li>English: General English, English for Email, Academic English,
+              Business English, English for Hospitality </li>
+              <li>French</li>
+              <li>Spanish</li>
+              <li>Amharic </li>
+              <li>Afan-Oromo </li>
+              <li>Tigrigna </li>
+              <li>Exam Preparation Programs (IELTS, SAT, TOEFL)</li>
+              <li>Junior Programs: Reading Challenge Programs</li>
+            </ul>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h3>Bridge’s four different Class Structures.</h3>
+            <p>
+              <strong>1)Personal Class: </strong> a one-to-one class structure
+              where an individual student and a teacher communicate directly and
+              join in the learning and teaching process. Personal classes are
+              highly recommended for people who’d like to customize their
+              schedules. It’s also convenient for people who prefer direct
+              communication with their teacher and seek for special attention.
+              People with a tight schedule and a busy life style usually find
+              this class very suitable. <br />
+              <strong>2)Group Class: </strong>a class of minimum six and
+              maximum twenty students. It is a highly recommended form of
+              language class since it's interactive and helps students develop
+              their communicative skill in an adequate amount of time.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              Group classes are diverse since different people from different
+              places attend them and this creates a nice , vibrant atmosphere
+              where people can actively learn.It’s provided three times a week
+              (Mondays, Wednesdays and Fridays) for one and a half hours a day .
+              <br />
+              <strong>3)Small Groups: </strong> gatherings of minimum three and
+              maximum five students and are preferable for people who enjoy
+              learning in a less crowded atmosphere and for groups of friends,
+              families or colleagues who’d like to learn a new language
+              together. <br />
+              <strong>4)Online Classes: </strong> - a class held online using
+              virtual learning methods. It allows students to learn from where
+              they are without having to come to school. It’s a very convenient
+              method nowadays due to people’s tight schedule and recently due to
+              the pandemic.
+            </p>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+          style="color: red"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div
+        class="row text-center"
+        style="margin-top: 30px; margin-left: 2%; margin-right: 2%"
+      >
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fab fa-accusoft fa-stack-1x fa-inverse"></i>
           </span>
-                    <h4 class="service-heading">Other Special Programs</h4>
-                    <p class="text-muted">Bridge offers exam preparation programs for IELTS, SAT, TOFEL and other national and international language exam taking students. We have teachers who are specifically qualified to train students and prepare them for the exams in the desired amount of time. Our school has resourses that students can use to prepare themselves with exercise what they learn through previous exam books.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
+          <h4 class="service-heading">Other Special Programs</h4>
+          <p class="text-muted">
+            Bridge offers exam preparation programs for IELTS, SAT, TOEFL and
+            other national and international language exams. We
+            have teachers who are specifically qualified to train students and
+            prepare them for the exams in the desired amount of time. Our school
+            has resources that students can use to prepare themselves.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-child fa-stack-1x fa-inverse"></i>
           </span>
-                    <h4 class="service-heading">Junior Programs </h4>
-                    <p class="text-muted">Junior programs are meant for students in the age range of (5-15). This program helps kids attend language classes and activities such as “The Reading Challenge “and other different interesting activities for children. It’s held during the summer and it helps children to learn different languages and explore their hobbies and talents through different writing, reading, acting, singing and drawing sessions along the way.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
+          <h4 class="service-heading">Junior Programs</h4>
+          <p class="text-muted">
+            Junior programs are meant for students in the age range of (5-15).
+            This program helps kids attend language classes and activities such
+            as “The Reading Challenge “and other different interesting
+            activities for children. It’s held during the summer and it helps
+            children to learn different languages and explore their hobbies and
+            talents through different writing, reading, acting, singing and
+            drawing sessions along the way.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fab fa-buffer fa-stack-1x fa-inverse"></i>
           </span>
-                    <h4 class="service-heading">Bridge offers </h4>
-                    <p class="text-muted">Five level classes to provide a better learning / teaching atmosphere and a class that perfectly suits every student. After taking a placement test, students’ level can easily be determined and we can classify them as a beginner, elementary, pre intermediate, intermediate or as an advanced student in the language they’ve chosen to learn.</p>
-                </div>
-            </div>
+          <h4 class="service-heading">Bridge offers</h4>
+          <p class="text-muted">
+            Five level classes to provide a better learning / teaching
+            atmosphere and a class that perfectly suits every student. After
+            taking a placement test, students’ level can easily be determined
+            and we can classify them as a beginner, elementary, pre
+            intermediate, intermediate or as an advanced student in the language
+            they’ve chosen to learn.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Portfolio Grid -->
     <section class="bg-light page-section" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Kid Learning</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>SAT</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Class</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Reading Challenge</h4>
-                        <p class="text-muted">For kids at summer time</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Children</h4>
-                        <p class="text-muted">Playing Games</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Snacks</h4>
-                        <p class="text-muted">Prepared for students</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/07-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Amar ready to learn</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/08-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Communication training </h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/09-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Amogne scholarship</h4>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal1"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/01-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Online English Course</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal2"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/02-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>SAT</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal3"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/03-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Class</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal4"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/04-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Reading Challenge</h4>
+              <p class="text-muted">For kids at summer time</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal5"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/05-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Children</h4>
+              <p class="text-muted">Playing Games</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal6"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/06-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Snacks</h4>
+              <p class="text-muted">Prepared for students</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal7"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/07-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Amar ready to learn</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal8"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/08-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Communication training</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a
+              class="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal9"
+            >
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="img/portfolio/09-thumbnail.jpg"
+                alt=""
+              />
+            </a>
+            <div class="portfolio-caption">
+              <h4>Amogne scholarship</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About -->
     <section class="page-section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Bridge School of Languages.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Our Humble Beginning</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Since 2015 our school has been giving different language courses with a curriculum that helped students communicate effectively and grow passion for languages. Throughout the years, Bridge has been offering variety of language courses and special programs designed for both children and adults.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="subheading">Everything we provide</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Bridge offer programs and courses in English, Amharic, French and many other local and foreign languages. The school gives variety of English courses in Academic English, Business English, English for Email and more. There are also different exam preparation programs for IELTS, SAT, TOEFL and other national and international English exam taking students.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="subheading">We Try To Meet Your Needs</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">People have different schedules and different amount of time available, so our school offers different forms of classes that enable customers to adjust and customize their schedules and effectively attend the courses.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="subheading">Things You Should Know About Us</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">
-                                        - Our courses are effectively and efficiently provided. <br>
-                                        - Located on a superb area. <br>
-                                        - Our teachers are professionals and native speakers of customers’ target language. <br>
-                                        - We have a welcoming, warm atmosphere.
-                                   </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">
+              Bridge School of Languages.
+            </h3>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img
+                    class="rounded-circle img-fluid"
+                    src="img/about/1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Our Humble Beginning</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      Since 2015 our school has been giving different language
+                      courses with a curriculum that has helped students communicate
+                      effectively and grow passion for languages. Throughout the
+                      years, Bridge has been offering a variety of language
+                      courses and special programs designed for both children
+                      and adults.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img
+                    class="rounded-circle img-fluid"
+                    src="img/about/2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Everything we provide</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      Bridge offers programs and courses in English, Amharic,
+                      French and many other local and foreign languages. The
+                      school gives a variety of English courses in Academic
+                      English, Business English, English for Email and more.
+                      There are also different exam preparation programs for
+                      IELTS, SAT, TOEFL and other national and international
+                      English exams.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img
+                    class="rounded-circle img-fluid"
+                    src="img/about/3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">We Try To Meet Your Needs</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      People have different schedules and different amounts of
+                      time available, so our school offers different forms of
+                      classes that enable customers to adjust and customize
+                      their schedules and effectively attend the courses.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img
+                    class="rounded-circle img-fluid"
+                    src="img/about/4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Things You Should Know About Us</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      - Our courses are effectively and efficiently provided.
+                      <br />
+                      - Located on a superb area. <br />
+                      - Our teachers are professionals and most are native speakers of
+                      customers’ target language. <br />
+                      - We have a welcoming, warm atmosphere.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part <br />Of Our <br />Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Team -->
     <section class="bg-light page-section" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Our dedicated personnel always ready to give you their best.</h3>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted">
+              Our dedicated personnel always ready to give you their best.
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="" />
+              <h4>Abayneh Haile</h4>
+              <p class="text-muted">Director of Studies</p>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-                        <h4>Abayneh Haile</h4>
-                        <p class="text-muted">Director of Studies</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                        <h4>Yennefer Teferi</h4>
-                        <p class="text-muted">Customer Service Officer</p>
-                        <!-- <ul class="list-inline social-buttons">
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="" />
+              <h4>Yennefer Teferi</h4>
+              <p class="text-muted">Customer Service Officer</p>
+              <!-- <ul class="list-inline social-buttons">
                             <li class="list-inline-item">
                                 <a href="#">
                                     <i class="fab fa-twitter"></i>
@@ -395,304 +675,415 @@
                                 </a>
                             </li>
                         </ul> -->
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-                        <h4>Yodit Gebeyehu</h4>
-                        <p class="text-muted">Customer Service Manager</p>
-                    </div>
-                </div>
             </div>
-            <!-- <div class="row">
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="" />
+              <h4>Yodit Gebeyehu</h4>
+              <p class="text-muted">Customer Service Manager</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div> -->
-        </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section class="page-section" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Location</h2>
-                    <p style="color: white; size: 20px;" class="text-left">
-                        Bridge School of languages is located on the road that leads form Megenagna to Gurd Shola right next to Ethio-Ceramics, on the ninth floor of Pecan Building.
-                        <br>-The area is surrounded by the hilltops of Megenagna which has given the place a fascinating view.
-                        <br>-Our office is located on the left corner of the building’s ninth floor next to LERSHA, (office No.-901A).
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <img class="img-responsive" src="img/location/location.jpg" width= "600" height="450" style="width: 100%;"/>
-                                </div>
-                                <div class="form-group">
-                                </div>
-                                <div class="form-group">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13866.279729289066!2d38.85825469233924!3d9.021460347792008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85298476e141%3A0x54f9402a82bf76d4!2sPecan%20Building!5e0!3m2!1sen!2set!4v1609421289494!5m2!1sen!2set" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p style="color: white; size: 20px;">
-                                Do You Have More Questions?
-                                Dial on: +251-920-00-00-77
-                            </p>
-                        </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Location</h2>
+            <p style="color: white; size: 20px" class="text-left">
+              Bridge School of languages is located on the road that leads form
+              Megenagna to Gurd Shola right next to Ethio-Ceramics, on the ninth
+              floor of Pecan Building.
+              <br />-The area is surrounded by the hilltops of Megenagna which
+              has given the place a fascinating view. <br />-Our office is
+              located on the left corner of the building’s ninth floor next to
+              LERSHA, (office No.-901A).
+            </p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <img
+                    class="img-responsive"
+                    src="img/location/location.jpg"
+                    width="600"
+                    height="450"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="form-group"></div>
+                <div class="form-group"></div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13866.279729289066!2d38.85825469233924!3d9.021460347792008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85298476e141%3A0x54f9402a82bf76d4!2sPecan%20Building!5e0!3m2!1sen!2set!4v1609421289494!5m2!1sen!2set"
+                    width="600"
+                    height="450"
+                    frameborder="0"
+                    style="border: 0"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div>
+              <p style="color: white; size: 20px">
+                Do You Have More Questions? Dial on: +251-920-00-00-77
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; www.bridgeschooloflanguages.com 2020</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/BridgeSchoolEthiopia/" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li class="list-inline-item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <span class="copyright"
+              >Copyright &copy; www.bridgeschooloflanguages.com 2020</span
+            >
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/BridgeSchoolEthiopia/"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Portfolio Modals -->
 
     <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/01-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/02-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/03-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/04-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal5"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/05-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal6"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/06-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 7 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal7"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/07-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 8 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/08-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal8"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/08-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal 9 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/09-full.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal9"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="img/portfolio/09-full.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -708,7 +1099,5 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
-</body>
-
+  </body>
 </html>

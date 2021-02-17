@@ -60,6 +60,33 @@
       .carousel-control-next-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2306c025' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
       }
+
+      @keyframes mymove {
+        0%{
+          color: #6F604D;
+        }
+        30%{
+          letter-spacing: 13px;
+        }
+        85%{
+          letter-spacing: 9px;
+        }
+        /* from {left: 0px;}
+        to {left: 60%;} */
+      }
+
+      .animate {
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 9px;
+        margin-bottom: 15px;
+        position: relative;
+        animation: mymove 7s infinite;
+        color: white;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+      }
+
     </style>
   </head>
 
@@ -118,6 +145,8 @@
           <div class="intro-heading text-uppercase">
             WE HAVE PASSION FOR LANGUAGES!!
           </div>
+          
+          <div class="animate intro-lead-in">EXCELLENCE IN LANGUAGE EDUCATION!</div>
           <a
             class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
             href="#services"

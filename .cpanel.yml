@@ -2,9 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/bridgepdccom/public_html/bridge
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R favicon.ico $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R flyer $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH

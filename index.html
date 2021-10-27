@@ -79,6 +79,42 @@
         animation-direction: alternate;
         animation-timing-function: ease-in;
       }
+
+      .client-logo {
+        width: 200px;
+        height: 50;
+      }
+
+      .img-fluid {
+        display: block;
+        width: 8vw;
+        height: 8vw;
+        max-width: 100%;
+        min-width: 100px;
+        min-height: 100px;
+        object-fit: contain;
+      }
+
+      .flexMe{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px
+    }
+    
+    .flexMe li{
+        width: 200px; 
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flexMe li img{
+        width: 100%; 
+        height: auto;
+    }
+    
     </style>
   </head>
 
@@ -89,11 +125,6 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
           Bridge Professional Development Centre
         </a>
-        <!-- <img
-          src="img/Bridge logo.png"
-          alt="Avatar"
-          style="border-radius: 50%; width: 100px; height: 100px"
-        /> -->
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -933,54 +964,44 @@
             class="row no-gutters clients-wrap clearfix wow fadeInUp"
             style="visibility: visible; animation-name: fadeInUp"
           >
-            <div class="col-lg-3 col-md-3 col-xs-6">
-              <div class="client-logo">
+          <ul class="flexMe">
+            <li>
+                <img src="img/clients/Excellerent.png" class="img-fluid" />
+            </li>
+            <li>
+                <img src="img/clients/Compassion.png" class="img-fluid" />
+            </li>
+            <li>
                 <img
-                  src="img/clients/Excellerent.png"
+                  src="img/clients/Fawe.png"
                   class="img-fluid"
-                  alt=""
                 />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6">
-              <div class="client-logo">
+            </li>
+            <li>
                 <img
-                  src="img/clients/Compassion.png"
+                  src="img/clients/nexgens.png"
                   class="img-fluid"
-                  alt=""
                 />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-6">
-              <div class="client-logo">
-                <img src="img/clients/Fawe.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-4 col-xs-6"
-              style="padding-top: 10px; margin-top: 20px"
-            >
-              <div class="client-logo">
-                <img src="img/clients/nexgens.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-4 col-xs-6"
-              style="padding-top: 10px; margin-top: 20px"
-            >
-              <div class="client-logo">
-                <img src="img/clients/Dejen.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-4 col-xs-6"
-              style="padding-top: 10px; margin-top: 20px"
-            >
-              <div class="client-logo">
-                <img src="img/clients/sandford.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-          </div>
+            </li>
+            <li>
+                <img
+                  src="img/clients/Dejen.png"
+                  class="img-fluid"
+                />
+            </li>
+            <li>
+                <img
+                  src="img/clients/sandford.png"
+                  class="img-fluid"
+                />
+            </li>
+            <li>
+                <img
+                  src="img/clients/plan international.png"
+                  class="img-fluid"
+                />
+            </li>
+          </ul>
         </div>
       </div>
     </section>

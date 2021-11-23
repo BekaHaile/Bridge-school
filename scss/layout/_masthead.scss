@@ -2,7 +2,7 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.png');
+  background-image: url("../img/header-bg.jpg");
   // background-color: #3c454d;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -27,7 +27,7 @@ header.masthead {
     }
   }
 }
-@media(min-width:768px) {
+@media (min-width: 768px) {
   header.masthead {
     .intro-text {
       padding-top: 300px;

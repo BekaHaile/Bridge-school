@@ -167,7 +167,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header class="masthead" id="masthead">
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">
@@ -2007,6 +2007,41 @@
 
       <!-- Custom scripts for this template -->
       <script src="js/agency.min.js"></script>
+      <!-- <script type = "text/javascript">
+            var backgroundImg=["img/header-bg2.jpg","img/header-bg3.jpg","img/header-bg.jpg"]; 
+            setInterval(changeImage, 5000);
+            var i = 0;
+            function changeImage() { 
+              
+            if(i == 2) i = 0;
+            else i++;
+     
+            document.getElementById("masthead").style.backgroundImage = 'url("' + backgroundImg[i] + '")';
+     
+           }
+      </script> -->
+
+      <script>
+        var bgImageArray = ["img/header-bg2.jpg","img/header-bg3.jpg","img/header-bg.jpg"],
+        secs = 5;
+        bgImageArray.forEach(function(img){
+            new Image().src = img; 
+            // caches images, avoiding white flash between background replacements
+        });
+
+        function backgroundSequence() {
+          window.clearTimeout();
+          var k = 0;
+          for (i = 0; i < bgImageArray.length; i++) {
+            setTimeout(function(){ 
+              document.getElementById("masthead").style.background = "url(" + bgImageArray[k] + ") no-repeat center center fixed";
+              document.getElementById("masthead").style.backgroundSize ="cover";
+            if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+            }, (secs * 1000) * i)	
+          }
+        }
+        backgroundSequence();
+      </script>
     </div>
   </body>
 </html>

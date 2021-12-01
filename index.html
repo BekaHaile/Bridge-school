@@ -93,6 +93,18 @@
         min-width: 100px;
         min-height: 100px;
         object-fit: contain;
+        margin-left: 15px;
+      }
+
+      .img-fluid-portfolio {
+        display: block;
+        width: 8vw;
+        height: 8vw;
+        max-width: 100%;
+        min-width: 100px;
+        min-height: 100px;
+        object-fit: contain;
+        margin-left: 100px;
       }
 
       .flexMe{
@@ -142,6 +154,11 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services"
                 >Programs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog"
+                >Blog</a
               >
             </li>
             <li class="nav-item">
@@ -409,8 +426,55 @@
       </div>
     </section>
 
+    <!-- Blog Grid -->
+    <section class="bg-light page-section" id="blog">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Blog</h2>
+        </div>
+      </div>
+      <div
+        class="row text-center"
+        style="margin-top: 30px; margin-left: 2%; margin-right: 2%"
+      >
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <img
+              class="rounded-circle img-fluid"
+              src="img/about/5.png"
+              alt=""
+            />
+          </span>
+          <h4 class="service-heading">
+            Learning for your Team - the Awayday
+          </h4>
+          <p class="text-muted">
+            <a href="blog/! Brown Liam Learning for your Team - the Awayday Option_3.pdf"> Click here </a> to read Learning for your Team - The Awayday
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <img
+              class="rounded-circle img-fluid"
+              src="img/about/5.png"
+              alt=""
+              width="100"
+              height="100"
+            />
+          </span>
+          <h4 class="service-heading">
+            Learning for your Team - The Bitesize
+          </h4>
+          <p class="text-muted">
+            <a href="blog/! Brown Liam Learning for your Team - The Bitesize Option_3.pdf"> Click here </a> to read Learning for your Team - The Bitesize
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio Grid -->
-    <section class="bg-light page-section" id="portfolio">
+    <section class="page-section" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -434,7 +498,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/presentation essential.png"
                 alt=""
                 width="200"
@@ -470,7 +534,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/presentation beyond essential.png"
                 alt=""
                 width="200"
@@ -506,7 +570,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/communications writing essentials.png"
                 alt=""
                 width="200"
@@ -542,7 +606,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/communication beyond essentials.png"
                 alt=""
                 width="200"
@@ -578,7 +642,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/meeting.png"
                 alt=""
                 width="200"
@@ -616,7 +680,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/negotiation.png"
                 alt=""
                 width="200"
@@ -652,7 +716,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/leadership.png"
                 alt=""
                 width="200"
@@ -688,7 +752,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/public speaking.png"
                 alt=""
                 width="200"
@@ -724,7 +788,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/interview.png"
                 alt=""
                 width="200"
@@ -760,7 +824,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/leadership.png"
                 alt=""
                 width="200"
@@ -796,7 +860,7 @@
                 </div>
               </div>
               <img
-                class="img-fluid"
+                class=".img-fluid-portfolio"
                 src="img/portfolio/customer service.png"
                 alt=""
                 width="200"
@@ -824,7 +888,7 @@
     </section>
 
     <!-- About -->
-    <section class="page-section" id="about">
+    <section class="bg-light page-section" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -879,15 +943,35 @@
                     </h4>
                   </div>
                   <div class="timeline-body">
-                    <!-- <p class="text-muted">
-                      Bridge offers programs and courses in English, Amharic,
-                      French and a wide range of other local and foreign
-                      languages such as Academic English, Business English,
-                      English for Email and other specialised areas. For those
-                      focused on qualifications and attainment we also provide
-                      different exam preparation programs for IELTS, SAT, TOEFL
-                      and other national and international English exams.
-                    </p> -->
+                    <p class="text-muted">
+                      Soft Skills </br>
+
+                      We offer a range of soft skill courses which are very practical for the
+                      21st century world of work. Some of our popular soft skill courses
+                      include: Leadership, Communication, Customer Service and Team Working
+                      skills.</br>
+
+
+                      Language Courses</br>
+
+                      Our language courses focus on two areas. We offer preparation course for
+                      the IELTS Life Skills and IELTS Academic Tests. We also offer Business
+                      English courses, face to face or virtually.</br>
+
+
+                      Intercultural Courses</br>
+
+                      For expatriates in Addis Ababa, we have excellent courses to foster and
+                      enable cultural competence and ease. Our offer includes an Intercultural
+                      Course, Introduction to Ethiopian Culture and Amharic for Expatriates.</br>
+
+
+                      For Teachers and Educators</br>
+
+                      Our staff are highly experienced teacher trainers and school leaders. We
+                      have a number of courses available which can be tailored to meet the
+                      needs of people in your school.
+                    </p>
                   </div>
                 </div>
               </li>
@@ -955,7 +1039,7 @@
       </div>
     </section>
 
-    <section id="client" class="bg-light">
+    <section id="client">
       <div id="clients" class="section-bg">
         <div class="container">
           <div class="section-header text-center">
@@ -1015,7 +1099,7 @@
     </section>
 
     <!-- Team -->
-    <section class="page-section" id="team">
+    <section class="bg-light page-section" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -2007,26 +2091,12 @@
 
       <!-- Custom scripts for this template -->
       <script src="js/agency.min.js"></script>
-      <!-- <script type = "text/javascript">
-            var backgroundImg=["img/header-bg2.jpg","img/header-bg3.jpg","img/header-bg.jpg"]; 
-            setInterval(changeImage, 5000);
-            var i = 0;
-            function changeImage() { 
-              
-            if(i == 2) i = 0;
-            else i++;
-     
-            document.getElementById("masthead").style.backgroundImage = 'url("' + backgroundImg[i] + '")';
-     
-           }
-      </script> -->
 
       <script>
         var bgImageArray = ["img/header-bg2.jpg","img/header-bg3.jpg","img/header-bg.jpg"],
         secs = 5;
         bgImageArray.forEach(function(img){
             new Image().src = img; 
-            // caches images, avoiding white flash between background replacements
         });
 
         function backgroundSequence() {

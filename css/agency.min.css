@@ -14,7 +14,8 @@ p {
 }
 
 a {
-    color: #06c025
+    color: #06c025;
+    text-decoration: none !important
 }
 
 a:hover {
@@ -36,7 +37,7 @@ h6 {
 }
 
 .page-section {
-    padding: 100px 0
+    padding-top: 120px;
 }
 
 .page-section h2.section-heading {
@@ -54,9 +55,34 @@ h6 {
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
+.page-section h2.blog-heading {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 36px
+}
+
+.page-section h3.blog-subheading {
+    font-size: 18px;
+    font-weight: 700;
+    /* margin-bottom: 16px; */
+    text-transform: none;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
+
+.page-section h4.blog-subheading {
+    font-size: 16px;
+    text-transform: none;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
+
+.side-bar h3.blog-subheading {
+    margin-bottom: 32px;
+}
+
+
 @media (min-width:768px) {
     section {
-        padding: 150px 0
+        padding-top: 120px;
     }
 }
 
@@ -110,11 +136,11 @@ img::-moz-selection {
     box-shadow: 0 0 0 .2rem rgba(254, 209, 55, .5) !important
 }
 
-#mainNav {
+.mainNav {
     background-color: #212529
 }
 
-#mainNav .navbar-toggler {
+.mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
     padding: 13px;
@@ -125,19 +151,19 @@ img::-moz-selection {
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
-#mainNav .navbar-brand {
+.mainNav .navbar-brand {
     color: #06c025;
     font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
-#mainNav .navbar-brand.active,
-#mainNav .navbar-brand:active,
-#mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:hover {
+.mainNav .navbar-brand.active,
+.mainNav .navbar-brand:active,
+.mainNav .navbar-brand:focus,
+.mainNav .navbar-brand:hover {
     color: #fec503
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
+.mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
     padding: .75em 0;
@@ -146,13 +172,121 @@ img::-moz-selection {
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active,
-#mainNav .navbar-nav .nav-item .nav-link:hover {
+.mainNav .navbar-nav .nav-item .nav-link.active,
+.mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #06c025
 }
 
+.drop-down {
+    float: left;
+    overflow: hidden;
+}
+
+.drop-down .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.drop-icon {
+    background-color: transparent;
+    border-style: none;
+    color: #fff;
+    margin-right: 30px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.drop-down-content {
+    font-size: 13px;
+    display: none;
+    position: absolute;
+    right: auto;
+    background-color: transparent;
+    min-width: 120px;
+    z-index: 1;
+
+}
+
+.drop-down-shrink {
+    background-color: #212529;
+}
+
+.drop-down-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drop-down-content a:hover {
+    color: #06c025;
+}
+
+.drop-down:hover .display-drop {
+    display: block;
+}
+
+.drop-down:hover .drop-icon {
+    color: #06c025;
+}
+
+/* .drop-down-btn:focus .drop-icon {
+
+    color: #06c025;
+    margin-top: 15px;
+} */
+
+@media screen and (max-width: 992px) {
+    .drop-down:hover .display-drop {
+        display: none;
+    }
+
+    .drop-down:hover .drop-icon {
+        color: #fff;
+    }
+
+
+    .drop-icon {
+        margin-left: 20px;
+    }
+
+    .drop-down-content {
+        position: relative;
+    }
+
+    /* .dropbtn .drop-down {
+        display: block;
+        width: 100%;
+        text-align: left;
+    } */
+
+    .display-mobile-drop {
+        display: block;
+    }
+
+    .drop-icon-style {
+        color: #06c025 !important;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .mainNav .navbar-brand {
+        font-size: 1.75em;
+        transition: all .3s
+    }
+}
+
 @media (min-width:992px) {
-    #mainNav {
+    .mainNav {
         padding-top: 25px;
         padding-bottom: 25px;
         transition: padding-top .3s, padding-bottom .3s;
@@ -160,22 +294,22 @@ img::-moz-selection {
         background-color: transparent
     }
 
-    #mainNav .navbar-brand {
-        font-size: 1.75em;
+    .mainNav .navbar-brand {
+        font-size: 1.64em;
         transition: all .3s
     }
 
-    #mainNav .navbar-nav .nav-item .nav-link {
+    .mainNav .navbar-nav .nav-item .nav-link {
         padding: 1.1em 1em !important
     }
 
-    #mainNav.navbar-shrink {
+    .mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
         background-color: #212529
     }
 
-    #mainNav.navbar-shrink .navbar-brand {
+    .mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0
     }
@@ -184,7 +318,7 @@ img::-moz-selection {
 header.masthead {
     text-align: center;
     color: #fff;
-    background-image: url(../img/header-bg4.jpg);
+    background-image: url(../img/header-bg5.jpg);
     /* background-color: #3c454d; */
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -236,10 +370,75 @@ header.masthead .intro-text .intro-heading {
     }
 }
 
+
 .service-heading {
     margin: 15px 0;
-    text-transform: none
+    text-transform: none;
+    color: black;
+    text-decoration: none;
 }
+
+.service-heading:hover {
+    color: #06c025;
+}
+
+/* blogs */
+
+.blog-heading {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.blog-subheading {
+    font-size: 22px;
+}
+
+.blog-content {
+    padding-bottom: 16px;
+}
+
+.blog-content img {
+    padding: 24px 0;
+    width: 40vw;
+}
+
+.side-bar {
+    padding: 18px 0px;
+    text-align: center;
+    margin-left: 32px;
+}
+
+.side-bar .blog-info {
+    margin: 16px 0 12px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.side-bar .blog-icon {
+    font-size: 13px;
+    padding: 3px 6px 0 0;
+}
+
+.side-bar h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+hr.solid {
+    border-top: 2px solid #bbb;
+}
+
+@media (max-width:990px) {
+    .side-bar {
+        margin-left: 0px;
+    }
+
+    .side-bar img {
+        width: 228px;
+    }
+}
+
+/* portfolio */
 
 #portfolio .portfolio-item {
     right: 0;
@@ -385,6 +584,12 @@ header.masthead .intro-text .intro-heading {
     height: 75px;
     transform: rotate(90deg);
     background-color: #212529
+}
+
+.quote-icon {
+    /* font-size: 28px; */
+    color: #06c025;
+    vertical-align: super;
 }
 
 .timeline {
@@ -699,6 +904,13 @@ ul.social-buttons li a {
     border-radius: 100%;
     outline: 0;
     background-color: #212529
+}
+
+.side-bar ul.social-buttons li a {
+    font-size: 14px;
+    line-height: 36px;
+    width: 36px;
+    height: 36px;
 }
 
 ul.social-buttons li a:active,

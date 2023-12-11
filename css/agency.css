@@ -40,7 +40,7 @@ h6 {
 }
 
 .page-section {
-  padding: 100px 0;
+  padding-top: 150px;
 }
 
 .page-section h2.section-heading {
@@ -62,7 +62,7 @@ h6 {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding-top: 150px;
   }
 }
 
@@ -118,11 +118,11 @@ img::-moz-selection {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-#mainNav {
+.mainNav {
   background-color: #212529;
 }
 
-#mainNav .navbar-toggler {
+.mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
   padding: 13px;
@@ -135,21 +135,21 @@ img::-moz-selection {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#mainNav .navbar-brand {
+.mainNav .navbar-brand {
   color: #06c025;
   font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#mainNav .navbar-brand.active,
-#mainNav .navbar-brand:active,
-#mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:hover {
+.mainNav .navbar-brand.active,
+.mainNav .navbar-brand:active,
+.mainNav .navbar-brand:focus,
+.mainNav .navbar-brand:hover {
   color: #fec503;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
+.mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
   padding: 0.75em 0;
@@ -160,13 +160,13 @@ img::-moz-selection {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active,
-#mainNav .navbar-nav .nav-item .nav-link:hover {
+.mainNav .navbar-nav .nav-item .nav-link.active,
+.mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
 
 @media (min-width: 992px) {
-  #mainNav {
+  .mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -174,22 +174,22 @@ img::-moz-selection {
     background-color: transparent;
   }
 
-  #mainNav .navbar-brand {
+  .mainNav .navbar-brand {
     font-size: 1.75em;
     transition: all 0.3s;
   }
 
-  #mainNav .navbar-nav .nav-item .nav-link {
+  .mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
   }
 
-  #mainNav.navbar-shrink {
+  .mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #212529;
   }
 
-  #mainNav.navbar-shrink .navbar-brand {
+  .mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
   }
@@ -198,7 +198,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg4.jpg");
+  background-image: url("../img/header-bg5.jpg");
   /* background-color: #3c454d; */
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -215,7 +215,7 @@ header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -225,7 +225,7 @@ header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -233,7 +233,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 280px;
+    padding-top: 300px;
     padding-bottom: 200px;
   }
 
@@ -241,7 +241,7 @@ header.masthead .intro-text .intro-heading {
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

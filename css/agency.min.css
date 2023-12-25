@@ -278,13 +278,6 @@ img::-moz-selection {
 
 }
 
-@media (min-width:1200px) {
-    .mainNav .navbar-brand {
-        font-size: 1.75em;
-        transition: all .3s
-    }
-}
-
 @media (min-width:992px) {
     .mainNav {
         padding-top: 25px;
@@ -295,7 +288,7 @@ img::-moz-selection {
     }
 
     .mainNav .navbar-brand {
-        font-size: 1.64em;
+        font-size: 1.45em;
         transition: all .3s
     }
 
@@ -312,6 +305,13 @@ img::-moz-selection {
     .mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0
+    }
+}
+
+@media (min-width:1200px) {
+    .mainNav .navbar-brand {
+        font-size: 1.64em;
+        transition: all .3s
     }
 }
 

@@ -585,6 +585,52 @@ hr.solid {
     transform: rotate(90deg);
     background-color: #212529
 }
+  
+  #partner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+
+  #partner li {
+    padding: 0 16px;
+  }
+
+  #partner img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .partner1, .partner4, .partner6{
+    padding: 15%;
+  }
+
+  .partner2{
+    padding: 10%;
+  }
+
+  @media (max-width:992px) {
+    #partner ul {
+        grid-template-columns: auto auto auto;
+      }
+      #partner img {
+        width: 80%;
+      }
+  }
+
+  @media (max-width:768px) {
+    #partner ul {
+        grid-template-columns: auto auto;
+      }
+      #partner img {
+        width: 75%;
+      }
+  }
+
+
 
 .quote-icon {
     /* font-size: 28px; */

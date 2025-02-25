@@ -312,7 +312,7 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 0 25px;
   text-align: center;
   background-color: #fff;
 }
@@ -791,4 +791,22 @@ ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+.portfolio-modal .image-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto;
+  max-width: 100%;
+}
+
+.portfolio-modal .image-grid img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 1000ms;
 }

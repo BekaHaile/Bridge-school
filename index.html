@@ -86,14 +86,20 @@
     }
 
     .img-fluid-portfolio {
-      display: block;
-      width: 8vw;
-      height: 8vw;
+      width: 10vw;
+      height: 10vw;
       max-width: 100%;
       min-width: 100px;
       min-height: 100px;
-      object-fit: contain;
-      margin-left: 100px;
+      /* object-fit: contain; */
+    }
+
+    .img-fluid-modal {
+      width: 15vw;
+      height: 15vw;
+      max-width: 100%;
+      min-width: 100px;
+      min-height: 100px;
     }
 
     ul {
@@ -614,40 +620,32 @@
   <!-- Portfolio Grid -->
   <section class="page-section" id="portfolio">
     <div class="container">
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Portfolio</h2><br />
-          <h3>Our Services</h3>
-          <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+          <h3>Programme for adults</h3>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal0">
+          <a class="portfolio-link" href="flyer/course_list.pdf">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/coaching_2.png" alt="" width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/portfolio/soft skills.png" alt="" />
           </a>
           <div class="portfolio-caption">
-            <h4>Coaching</h4>
-            <p class="text-muted">unlocking your potential</p>
-            <a data-toggle="modal" href="#portfolioModal0">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
+            <h4>Soft skills training</h4>
+            <p class="text-muted">Unlocking your potential</p>
+            <a href="flyer/course_list.pdf">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
+                List of our courses
               </button>
             </a>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h3>Administration Courses</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
@@ -655,25 +653,18 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/administration.png" alt="" width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/portfolio/team building2.png" alt="" />
           </a>
           <div class="portfolio-caption">
-            <h4>Administration skills</h4>
-            <p class="text-muted">Making things work</p>
+            <h4>Facilitating retreats <br/>(team building sessions) </h4>
+            <p class="text-muted">Building bonds beyond the office</p>
             <a data-toggle="modal" href="#portfolioModal1">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h3>Coummunication Courses</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
@@ -681,19 +672,26 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/communications writing essentials.png" alt=""
-              width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/portfolio/english.png" alt="" />
           </a>
           <div class="portfolio-caption">
-            <h4>Communication</h4>
-            <p class="text-muted">Writing to get your Message Across</p>
+            <h4>English for Specific Purpose</h4>
+            <p class="text-muted">Speak with confidence</p>
             <a data-toggle="modal" href="#portfolioModal2">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
           </div>
         </div>
+      </div>
+
+      <div class="row mb-4 mt-4">
+        <div class="col-lg-12 text-center">
+          <h3>Programme for expats</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
@@ -701,26 +699,18 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/communications speaking.png" alt="" width="200"
-              height="200" />
+            <img class="img-fluid-portfolio" src="img/portfolio/amharic.png" alt="" width="200" height="200" />
           </a>
           <div class="portfolio-caption">
-            <h4>Communication</h4>
-            <p class="text-muted">Personal effectiveness: making an impact</p>
+            <h4>Amharic for expats </h4>
+            <p class="text-muted">From greetings to conversations</p>
             <a data-toggle="modal" href="#portfolioModal3">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h3>Management Courses</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
@@ -728,19 +718,18 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/coaching.png" alt="" width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/portfolio/intercultural.png" alt="" width="200" height="200" />
           </a>
           <div class="portfolio-caption">
-            <h4>Coaching Skills</h4>
-            <p class="text-muted">Unpack the potential of your team members through coaching</p>
+            <h4>Intercultural skills<br/>training</h4>
+            <p class="text-muted">being your best self</p>
             <a data-toggle="modal" href="#portfolioModal4">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="portfolio-hover">
@@ -748,19 +737,26 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/leadership.png" alt="" width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/partners/CCO2.png" alt="" style="padding: 15px;" />
           </a>
           <div class="portfolio-caption">
-            <h4>Leadership Skills</h4>
-            <p class="text-muted">Be what every team needs</p>
+            <h4>Culture Connector</h4>
+            <p class="text-muted">Explore cultural differences in a new way</p>
             <a data-toggle="modal" href="#portfolioModal5">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
           </div>
         </div>
+      </div>
 
+      <div class="row mb-4 mt-4">
+        <div class="col-lg-12 text-center">
+          <h3>Programme for children</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
             <div class="portfolio-hover">
@@ -768,21 +764,26 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/meeting.png" alt="" width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/logos/RC.png" alt="" width="200" height="200" />
           </a>
           <div class="portfolio-caption">
-            <h4>Meeting Skills</h4>
-            <p class="text-muted">
-              Leading a meeting: getting the best results
-            </p>
+            <h4>Reading Champions</h4>
+            <p class="text-muted">Raising a generation of children <br/> who enjoy reading!</p>
             <a data-toggle="modal" href="#portfolioModal6">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
           </div>
         </div>
+      </div>
 
+      <div class="row mb-4 mt-4">
+        <div class="col-lg-12 text-center">
+          <h3>Programme for schools</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
             <div class="portfolio-hover">
@@ -790,19 +791,18 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/negotiation.png" alt="" width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/portfolio/teacher.png" alt="" width="200" height="200" />
           </a>
           <div class="portfolio-caption">
-            <h4>Negotiation Skills</h4>
-            <p class="text-muted">Get the result you want</p>
+            <h4>Teacher training</h4>
+            <p class="text-muted">Empowering educators</p>
             <a data-toggle="modal" href="#portfolioModal7">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
             <div class="portfolio-hover">
@@ -810,271 +810,13 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/performance.png" alt="" width="200" height="200" />
+            <img class="img-fluid-portfolio" src="img/portfolio/school leader.png" alt="" width="200" height="200" />
           </a>
           <div class="portfolio-caption">
-            <h4>Performance Management</h4>
-            <p class="text-muted">Principles and Practice</p>
+            <h4>School leadership<br/>training</h4>
+            <p class="text-muted">Shaping the Future of Education</p>
             <a data-toggle="modal" href="#portfolioModal8">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/presentation essential.png" alt="" width="200"
-              height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Presentation Skills</h4>
-            <p class="text-muted">Feel at ease – you’ve covered all the bases, now have the right impact</p>
-            <a data-toggle="modal" href="#portfolioModal9">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/public speaking.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Public Speaking and Special Occasion Speeches</h4>
-            <p class="text-muted">Seeing the best of you!</p>
-            <a data-toggle="modal" href="#portfolioModal10">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal11">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/selling.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Selling Skills for non-Sales People</h4>
-            <p class="text-muted">Selling - not a science, nor an art. It’s a skill</p>
-            <a data-toggle="modal" href="#portfolioModal11">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal12">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/team building.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Team Building and Managing Skills</h4>
-            <p class="text-muted">Ensure your team are working at their best and reaching their potential</p>
-            <a data-toggle="modal" href="#portfolioModal12">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal13">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/tot.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Training the Trainer</h4>
-            <p class="text-muted">Learn to facilitate with ease!</p>
-            <a data-toggle="modal" href="#portfolioModal13">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h3>Personal Effectiveness Courses</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal14">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/customer service.png" alt="" width="200"
-              height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Customer Service</h4>
-            <p class="text-muted">
-              Personal effectiveness: making a difference
-            </p>
-            <a data-toggle="modal" href="#portfolioModal14">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal15">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/influencing.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Personal Impact and Influencing Skills</h4>
-            <p class="text-muted">Opportunities abound. Make sure you seize them</p>
-            <a data-toggle="modal" href="#portfolioModal15">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal16">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/intercultural.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Intercultural Skills</h4>
-            <p class="text-muted">being your best self</p>
-            <a data-toggle="modal" href="#portfolioModal16">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal17">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/interview.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Get that job!</h4>
-            <p class="text-muted">interview and job application skills</p>
-            <a data-toggle="modal" href="#portfolioModal17">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal18">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/teamworking.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Team Working Skills</h4>
-            <p class="text-muted">Working at your best with others</p>
-            <a data-toggle="modal" href="#portfolioModal18">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal19">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/time management.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Time Management Skills</h4>
-            <p class="text-muted">Make the most of your time and be a stress buster</p>
-            <a data-toggle="modal" href="#portfolioModal19">
-              <button type="button" class="btn btn-success" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h3>Team Retreats</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal20">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class=".img-fluid-portfolio" src="img/portfolio/retreat.png" alt="" width="200" height="200" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Awaydays</h4>
-            <p class="text-muted">Learning with your team</p>
-            <a data-toggle="modal" href="#portfolioModal20">
-              <button type="button" class="btn btn-success" style="background-color: black">
+              <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
             </a>
@@ -1196,42 +938,42 @@
     </div>
   </section>
 
-    <!-- partners -->
-    <section class="page-section" id="partner">
-      <div id="partners" class="section-bg">
-        <div class="container">
-          <div class="section-header text-center">
-            <h2 class="section-heading text-uppercase">Our Partners</h2>
-            <h3 class="section-subheading text-muted">
-              Meet organisations we work with
-            </h3>
-          </div>
-          <div class="row justify-content-center body mb-4">
-            <ul class="col-lg-11 justify-content-center">
-              <li>
-                <img class="img-fluid partner1" src='img/partners/CCO.png' alt=''>
-              </li>
-              <li>
-                <img class="img-fluid partner2" src='img/partners/GSL.png' alt=''>
-              </li>
-              <li>
-                <img class="img-fluid partner3" src='img/partners/GPE.png' alt=''>
-              </li>
-              <li>
-                <img class="img-fluid partner4" src='img/partners/Ye-Ethiopia-Lijoch-TV.jpg' alt=''>
-              </li>
-              <li>
-                <img class="img-fluid partner5" src='img/partners/LCN.jpg' alt=''>
-              </li>
-              <li>
-                <img class="img-fluid partner6" src='img/partners/elmwood logo.png' alt=''>
-              </li>
-          
-            </ul>
-          </div>
+  <!-- partners -->
+  <section class="page-section" id="partner">
+    <div id="partners" class="section-bg">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-heading text-uppercase">Our Partners</h2>
+          <h3 class="section-subheading text-muted">
+            Meet organisations we work with
+          </h3>
+        </div>
+        <div class="row justify-content-center body mb-4">
+          <ul class="col-lg-11 justify-content-center">
+            <li>
+              <img class="img-fluid partner1" src='img/partners/CCO.png' alt=''>
+            </li>
+            <li>
+              <img class="img-fluid partner2" src='img/partners/GSL.png' alt=''>
+            </li>
+            <li>
+              <img class="img-fluid partner3" src='img/partners/GPE.png' alt=''>
+            </li>
+            <li>
+              <img class="img-fluid partner4" src='img/partners/Ye-Ethiopia-Lijoch-TV.jpg' alt=''>
+            </li>
+            <li>
+              <img class="img-fluid partner5" src='img/partners/LCN.jpg' alt=''>
+            </li>
+            <li>
+              <img class="img-fluid partner6" src='img/partners/elmwood logo.png' alt=''>
+            </li>
+
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- Testimonials -->
   <section class="page-section" id="testimonials">
@@ -1485,7 +1227,7 @@
         <div class="row align-items-center">
           <div class="col-md-4">
             <span class="copyright">Copyright &copy; www.bridgepdc.com <br />
-              Addis Ababa, Ethiopia 2020</span>
+              Addis Ababa, Ethiopia 2025</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -1532,46 +1274,6 @@
 
     <!-- Portfolio Modals -->
 
-    <!-- Modal 0 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                              class="img-fluid d-block mx-auto"
-                              src="img/portfolio/10-full.jpg"
-                              alt=""
-                            /> -->
-                  <h4>Coaching - unlocking your potential</h4>
-                  <!-- Be valued, be noticed, be important<br /><br /> -->
-
-                  We have certified Life and Leadership Coaches who are members of International Coaching Federation
-                  (ICF).
-                  Most of them have more than a decade’s experience helping individuals and teams achieve their goals.
-                  We have coaches based in different parts of the world.
-                  <br /><br />
-
-                  We offer the coaching via zoom or face to face in our office in Gurd Shola.
-                  We offer one on one, group and team coaching in the following areas: Life and Leadership Coaching,
-                  Coaching, Financial Coaching and Transition Coaching.<br /><br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1585,32 +1287,54 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/10-full.jpg"
-                          alt=""
-                        /> -->
-                  <h4>Administration skills - making things work</h4>
-                  Be valued, be noticed, be important<br /><br />
+                  <h4>Facilitating retreats - team building sessions</h4>
+                  <span class="text-muted">Building bonds beyond the office</span><br /><br />
 
-                  This<strong> 2-day workshop </strong>will help you be among the best and most effective
-                  administrators
-                  with new skills in communication and organisation, showing solid judgment and teamwork that
-                  employers
-                  value highly.
-                  <br /><br />
+                  Here is your opportunity to get your team, or your whole department or even your entire
+                  organisation, out of the office to explore new ideas, resolve issues and plan for the future.
+                  You’ll spend more time ‘on the business’ rather than ‘in the business’. Away together,
+                  learning together and achieving together. <br /><br />
 
-                  Behind every executive team is an assistant who makes business happen, providing
-                  high-level administrative support, including preparing reports, handling correspondence
-                  and scheduling meetings.<br /><br />
-
+                  As your facilitator, we will develop a programme to suit the unique dynamics of your
+                  people and the outcomes you want to achieve. Whether you need to create your strategic
+                  plan, decide on a new product, process or campaign, get to know your team better or
+                  simply take stock of the past financial year and look to the year ahead, we can create the
+                  day you need. <br /><br />
+                  
+                  For your Awayday we have tools to examine how your team is doing, team building activities, indoor games, energizers,
+                  sports, evening games, campfire activities and more. <br /><br />
+                  
+                  We have facilitated team building sessions for various organisations including: Mastercard Foundation, WHO, World Vision, Kefeta, CST Ethiopia and Capital Hotel & Spa. <br /><br />
                 </div>
               </div>
             </div>
+            <div class="row justify-content-center body mb-4">
+              <ul class="col-lg-7 image-grid">
+                  <li>
+                    <figure>
+                      <img src='img/gallery/playing dart.jpg' alt=''>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src='img/gallery/playing island board.jpg' alt=''>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src='img/gallery/playing volleyball.jpg' alt=''>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src='img/gallery/simon and delilah game.jpg' alt=''>
+                    </figure>
+                  </li>
+              </ul>
+            </div> 
           </div>
         </div>
-      </div>
+     </div>
     </div>
 
     <!-- Modal 2 -->
@@ -1626,25 +1350,14 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/02-full.jpg"
-                          alt=""
-                        /> -->
-                  <p></p>
-                  <h4>Communication – Writing to get your Message Across</h4>
-                  Write with ease – you’ve covered the bases <br /><br />
+                  <h4>English for Specific Purpose</h4>
+                  <span class="text-muted">Speak with confidence</span><br /><br />
 
-                  Writing in English for work is a new challenge for many –
-                  emails and letters especially. Make sure that the documents
-                  you produce are clear, concise and appropriate for your
-                  organisation as well as your readers’ needs.<br /><br />
-                  This ability to write well in business means you present a
-                  positive professional image and you encourage swift, clear
-                  communication, both within the workplace and beyond.
-                  This<strong> 1-day workshop </strong>will show you how. <br /> <br />
+                  We can tailor an English language training package which can meet your specific needs. We can come to your premises and deliver the course face to face or we can do it virtually. We have
+                  English teachers based in the US and UK who can teach your team members online. <br /><br />
 
+                  We have given English lessons to a variety of organizations including: The US Embassy, The Embassy of Ireland, Holland
+                  Dairy, Compassion International, Nexgen Packaging and Excellerent Technology Solutions.<br /><br />
                 </div>
               </div>
             </div>
@@ -1666,25 +1379,17 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                                  class="img-fluid d-block mx-auto"
-                                  src="img/portfolio/02-full.jpg"
-                                  alt=""
-                                /> -->
-                  <p></p>
-                  <h4>Communication - Speaking</h4>
-                  personal effectiveness: making an impact <br /><br />
+                  <h4>Amharic for expats</h4>
+                  <span class="text-muted">From greetings to conversations</span><br /><br />
 
-                  Nothing works if communication doesn’t work.<br /><br />
-                  Communication skills are central to the success of every organisation. It’s about having
-                  the best ideas, the clearest vision and the most coherent strategy and conveying your
-                  message clearly, directly and with a sense of ‘you’. <br /> <br />
-                  This<strong> 1-day course </strong>will help you develop the impact and influence of your
-                  communication
-                  skills wherever the context, in business conversations and meetings, interacting with
-                  colleagues, customers and clients. <br /> <br />
-
+                  The training focuses on developing basic communication skills for everyday interactions, alongside reading and writing
+                  which includes vocabulary and grammar lessons. Participants learn common phrases and thematic vocabulary related to
+                  various aspects of life, while also gaining essential grammar knowledge about sentence structure, tenses, and verbs.
+                  <br /> <br />
+                  
+                  Speaking and listening practice is emphasized through conversational exercises with
+                  native speakers and listening activities to enhance comprehension. Cultural immersion is an integral part of the
+                  program, providing insights into Ethiopian customs, music, literature, and social etiquette. <br /><br />
                 </div>
               </div>
             </div>
@@ -1706,25 +1411,18 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                                      class="img-fluid d-block mx-auto"
-                                      src="img/portfolio/02-full.jpg"
-                                      alt=""
-                                    /> -->
-                  <p></p>
-                  <h4>Coaching Skills</h4>
-                  - Unpack the potential of your team members through coaching <br /><br />
+                  <h4>Intercultural skills training</h4>
+                  <span class="text-muted">being your best self</span><br /><br />
 
-                  This<strong> 1-day course </strong>will equip you with the coaching skills you need.<br /><br />
-                  Asking the right questions and listening actively are the two most important coaching
-                  skills. During the course we will thoroughly unpack these core skills through self
-                  assessment exercises, quizzes and group discussions. You will also have the
-                  opportunity to practise the coach approach through role play, observation and
-                  feedback. <br /> <br /> If you want to help your team members realise their full potential, then this
-                  coaching
-                  course is for you.<br /> <br />
+                  Reflecting on what “culture” is, and how it influences our preferences and behaviours
+                  in intercultural situations, especially in the workplace, is the best starting point for
+                  personal success.<br /> <br />
 
+                  You will understand new and familiar cultural situations and consider how others may
+                  react to our behaviours and style. This will enable you to respond positively and
+                  empathetically, building trust, familiarity and collegiality.<br /> <br />
+                  This<strong> 1-day course </strong>will help you ‘be you at your best’ wherever the context, in
+                  business conversations and meetings, interacting with colleagues, customers and clients. <br /> <br />
                 </div>
               </div>
             </div>
@@ -1746,23 +1444,13 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/07-full.jpg"
-                          alt=""
-                        /> -->
-                  <h4>Leadership Skills - Be what every team needs</h4>
-                  Managers are leaders too<br /><br />
-
-                  You will understand the John Adair approach to leadership and see how you can implement important
-                  changes to your style and improve outcomes.<br /><br />
-
-                  This<strong> 1-day workshop </strong>demonstrates how effective leadership is one of the best ways to
-                  motivate a team,
-                  create effective teamwork and produce the best results during projects and
-                  tasks.<br /><br />
-
+                  <h4>CultureConnector</h4>
+                  <span class="text-muted">Explore cultural differences in a new way </span><br /><br />
+                
+                  <a href="https://www.cultureconnector.com">CultureConnector</a> is an independent UK-based business focused on
+                  one thing only: providing online solutions for the development of intercultural competence. It is now firmly established
+                  as the leading cultural assessment and learning platform, recognised by universities, major corporations, NGOs and renowned
+                  public institutions across the world.
                 </div>
               </div>
             </div>
@@ -1784,24 +1472,30 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/05-full.jpg"
-                          alt=""
-                        /> -->
-                  <h4>Meeting Skills - Leading a meeting</h4>
-                  Make meetings matter : Getting the best results <br />
+                  <h4>Reading Champions</h4>
+                  <span class="text-muted">Raising a generation of children who enjoy children!</span><br /><br />
+                
+                  Many children in Ethiopia associate reading with tests and exams. The only time
+                  children read is when they are learning something and are expected to do it as
+                  part of their studies. The concept of reading for pleasure doesn’t exist in many
+                  parts of Ethiopia. The Reading Champions program aims to contribute towards
+                  reading for pleasure, this is the overarching goal of the programme. We would
+                  like to help children cultivate reading habits. We want them to read for the sake
+                  of reading. Reading in its own is a reward. <br /> <br/> The following are some of the activities we do in our
+                  programme.<br /> <br/>
 
-                  Is this you?... your meetings go over their allotted time?
-                  Poor attendance or lateness? <br /> <br />
-                  Agendas don't hang together and are changed as you go along? Attendees feel frustrated or
-                  negative? Unclear outcomes or none at all? Yes? <br /> <br />
-                  Then this<strong> 1-day workshop </strong>is for you. See how you can
-                  get the most value from your meetings: share information,
-                  solve problems or work with others to arrive at decisions
-                  that matter.<br /> <br />
-
+                  <ul style="list-style-type: disc; width:auto;">
+                    <li>invite children to read their favourite stories on our monthly get together -
+                      come-and-read-your-story! Encourage children who come to our monthly
+                      meetings to donate books to those who can’t afford to buy</li>
+                    <li>train schools on reading for pleasure especially in relation to using their
+                      library well.</li>
+                    <li>run reading challenge programmes and other competitions</li>
+                    <li>organise panel discussions and festivals in the area of literacy</li>
+                    <li>do surveys and research in the area of literacy</li>
+                    <li>build relationships with other local and international organisations which
+                      work in the area of literacy</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1823,24 +1517,9 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/06-full.jpg"
-                          alt=""
-                        /> -->
-                  <h4>Negotiation Skills - Get the result you want</h4>
-                  <br />
-                  Achieve win:win and build relationships<br /><br />
-                  This<strong> 1-day workshop </strong>will give you the
-                  confidence to be a successful negotiator.<br /><br />
-                  Negotiation can help you achieve your business aims and
-                  solve problems. It is about reaching win:win solutions,
-                  where all sides feel the outcome is fair. <br /><br />
-                  We all need to understand the process of negotiation - how to prepare,
-                  having clear aims and objectives, how and when to use
-                  different negotiating styles, strategies and tactics.<br /><br />
-
+                  <h4>Teacher training</h4>
+                  <span class="text-muted">Empowering educators</span><br />
+                  <!-- "description here" -->
                 </div>
               </div>
             </div>
@@ -1862,516 +1541,18 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                                      class="img-fluid d-block mx-auto"
-                                      src="img/portfolio/02-full.jpg"
-                                      alt=""
-                                    /> -->
-                  <p></p>
-                  <h4>Performance Management – Principles and Practice</h4>
-                  Have your people doing excellent things .. and catch them doing it! <br /><br />
+                  <h4>School leadership training</h4>
+                  <span class="text-muted">Shaping the future of education</span><br /><br />
 
-                  Achieving the best level of staff performance is critical for any successful business. You
-                  need to provide an opportunity for real, fair and impactful dialogue to advance
-                  employee careers and strengthen employee-manager relationships.<br /> <br />
-                  You need a performance appraisal approach that works to underpin reward and
-                  promotion decisions, while encouraging employees to learn and grow and reach their
-                  potential.<br /> <br />
-                  This<strong> 1-day course </strong>looks into core principles and best practice to achieve a proactive
-                  approach to performance management.<br /> <br />
+                  A one point increase on the school management practices of school leaders is associated with a ten percent increase in
+                  student performance.
+                  (Research by Stanford University) <br/> <br/>
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 9 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                      class="img-fluid"
-                      src="img/portfolio/01-full.png"
-                      alt=""
-                    /> -->
-                  <h4>Presentation Skills</h4>
-
-                  Feel at ease – you’ve covered all the bases, now have the right impact<br /><br />
-
-                  Delivering a presentation in English is a new experience for
-                  many and is quite a challenge. <br /><br />
-                  You will develop the skills to structure your presentation
-                  and then make it visual and very memorable. <br /><br />
-                  This<strong> 2-day workshop </strong>will help
-                  you quickly gain confidence and competence in getting the
-                  details right. <br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 10 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                      class="img-fluid d-block mx-auto"
-                      src="img/portfolio/08-full.jpg"
-                      alt=""
-                    /> -->
-                  <h4>Public Speaking and Special Occasion Speeches</h4>
-                  Seeing the best of you! You can win over, motivate and
-                  inform! <br /><br />
-
-                  The best speakers form connections, influence decisions, and motivate change.<br /> <br />
-                  In this<strong> 1-day workshop </strong>you’ll discover how you can grab your moment to make a
-                  difference in front of an audience and build the skills you already have.<br /> <br />
-
-                  Presenting ideas, information and decisions to your boss or client is a vital component of
-                  a successful career in a modern internationally oriented business in Ethiopia. We can
-                  help you manage.<br /><br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 11 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/02-full.jpg"
-                          alt=""
-                        /> -->
-                  <p></p>
-                  <h4>Selling Skills for non-Sales People</h4>
-                  Selling - not a science, nor an art. It’s a skill <br /><br />
-
-                  While impact is an important consideration in all our work, we still need to generate
-                  income from our products and services. This workshop is designed to help participants
-                  understand how selling works and to be part of that effort. <br /> <br />
-                  This<strong> 2-day workshop </strong>aims to build awareness and skill in selling in real-world
-                  commercial contexts. <br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 12 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/02-full.jpg"
-                          alt=""
-                        /> -->
-                  <p></p>
-                  <h4>Team Building and Managing Skills</h4>
-                  Ensure your team are working at their best and reaching their potential <br /><br />
-
-                  Building and managing a team has never been more complex. Knowledge-based
-                  workers are challenging ‘old style’ leadership looking for something different. Many
-                  are now working from home or are spread out across time-zones and continents.<br /> <br />
-                  Are you ready to provide the right balance of challenge and autonomy for your team
-                  and build the strong relationships that characterise all high performing teams? If you
-                  are, this<strong> 1-day course </strong>will show you where to start. <br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 13 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                              class="img-fluid d-block mx-auto"
-                              src="img/portfolio/02-full.jpg"
-                              alt=""
-                            /> -->
-                  <p></p>
-                  <h4>Training the Trainer – Learn to facilitate with ease!</h4>
-                  Training others is both a gift and a skill <br /><br />
-
-                  One of the roles of the HR department is to deliver a range of training interventions for
-                  internal colleagues in the organisation. Being able to facilitate training well is a big
-                  challenge. <br /> <br />
-                  This<strong> 2-day course </strong>will give you the principles, the tools and the practical
-                  experience
-                  to be able to facilitate sessions well. We will help you design and create effective training
-                  programmes, with confidence and flair, and the skills you need to work with the
-                  dynamics of group learning. <br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 14 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/11-full.jpg"
-                          alt=""
-                        /> -->
-                  <h4>Customer Service</h4>
-                  Personal effectiveness: making a difference <br />
-                  Be effective, friendly and customer focused!<br /><br />
-
-                  You know that all customer facing roles are demanding –
-                  especially when you are connecting using a different
-                  language.<br /><br />
-
-                  We will show you how to turn a customer service
-                  disappointment into a positive experience and respond to
-                  selling opportunities effectively.<br /><br />
-
-                  This<strong> 2-day workshop </strong>will help you adopt a consistent,
-                  professional style when speaking with customers. You will
-                  develop skills to engage with customers and handle their
-                  enquiries effectively. You will identify ways you can add
-                  value to customer relationships and exceed expectations.
-                  <br /><br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 15 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                              class="img-fluid d-block mx-auto"
-                              src="img/portfolio/02-full.jpg"
-                              alt=""
-                            /> -->
-                  <p></p>
-                  <h4>Personal Impact and Influencing Skills</h4>
-                  Opportunities abound. Make sure you seize them<br /><br />
-                  Working with others is key to what we do. The impact we make on others, our ability
-                  to make and build relationships that last over time and how we ‘come across’ will
-                  always be fundamental skills for working professionals.<br /> <br />
-
-                  An important focus of our work therefore is influencing others – colleagues, partners,
-                  customers and clients and being resourceful in sometimes stressful situations.<br /> <br />
-
-                  This<strong> 2-day course </strong>is about helping you become more self-aware. It will give you
-                  techniques to develop your impact to make the right first impression. <br /> <br />
-
-                  You will develop the skills you need to influence, persuade and build relationships and
-                  ‘make the case’ for your organisation’s services and products and extend your personal
-                  and professional networks.<br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 16 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                              class="img-fluid d-block mx-auto"
-                              src="img/portfolio/02-full.jpg"
-                              alt=""
-                            /> -->
-                  <p></p>
-                  <h4>Intercultural Skills - being your best self</h4>
-                  We’re all in this together! <br /><br />
-
-                  Reflecting on what “culture” is, and how it influences our preferences and behaviours
-                  in intercultural situations, especially in the workplace, is the best starting point for
-                  personal success.<br /> <br />
-
-                  You will understand new and familiar cultural situations and consider how others may
-                  react to our behaviours and style. This will enable you to respond positively and
-                  empathetically, building trust, familiarity and collegiality.<br /> <br />
-                  This<strong> 1-day course </strong>will help you ‘be you at your best’ wherever the context, in
-                  business conversations and meetings, interacting with colleagues, customers and clients. <br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 17 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                      class="img-fluid d-block mx-auto"
-                      src="img/portfolio/09-full.jpg"
-                      alt=""
-                    /> -->
-                  <h4>
-                    Get that job! - interview and job application skills
-                  </h4>
-                  You can stand out from the others <br /><br />
-
-                  This<strong> 1-day workshop </strong>will help you understand and apply job
-                  application writing and interview skills, where English is
-                  the medium. <br /><br />
-                  Discover and use ideas to create your own
-                  personalised template for addressing job specific criteria.
-                  Take away practical tools will boost your confidence to
-                  increase your opportunities to secure your ideal role.<br /><br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 18 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                              class="img-fluid d-block mx-auto"
-                              src="img/portfolio/02-full.jpg"
-                              alt=""
-                            /> -->
-                  <p></p>
-                  <h4>Team Working Skills</h4>
-                  Working at your best with others<br /><br />
-
-                  Teamwork is difficult. As our work environment in the knowledge economy becomes
-                  even more complex, so too will teamwork. However, if we focus on what connection
-                  looks like at every level in teams and the wider organisation, we can begin to address
-                  the challenges of trust, proximity, best work conditions, self-awareness, and purpose
-                  in teams.<br /> <br />
-
-                  It starts with acknowledging the importance of the individual and how you feel
-                  connected to others at work.<br /> <br />
-                  Join this<strong> 1-day workshop </strong>to understand how you can best fit into the teams you work
-                  with. <br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 19 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                                  class="img-fluid d-block mx-auto"
-                                  src="img/portfolio/02-full.jpg"
-                                  alt=""
-                                /> -->
-                  <p></p>
-                  <h4>Time Management Skills</h4>
-                  Make the most of your time and be a stress buster<br /><br />
-
-                  Why is managing your time such an important skill? When working with your
-                  customers and colleagues you really need to show them your ability to manage your
-                  time and your tasks. It’s a real reputation builder!<br /> <br />
-
-                  Of course, managing your time well doesn’t happen by accident - it’s a learned and
-                  developed skill and formed habits .. something you attend to every day.<br /> <br />
-                  This<strong> 1-day workshop </strong>shows you, apart from looking and behaving more professional,
-                  good time managers have lower stress levels and a better work-life balance. Plus they
-                  are nicer to work with! <br /> <br />
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 20 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <!-- Project Details Go Here -->
-                  <!-- <img
-                          class="img-fluid d-block mx-auto"
-                          src="img/portfolio/11-full.jpg"
-                          alt=""
-                        /> -->
-                  <h4>Team retreats</h4>
-                  awaydays - learning with your team <br /><br />
-
-                  One of the most overlooked tools in the learning and development toolbox used by managers is the
-                  Away-day. That’s a pity because it has many benefits. <br /><br />
-
-                  Not the “let’s-build-a-boat/bridge-with-straws-and-sticky-tape-and-cross-the-river” kind. More like
-                  this “a day where colleagues come together, away from work, to explore, resolve and plan”.
-                  <br /><br />
-
-                  So, Away-days are for exploration, sharing, taking risks with ideas, resolving issues together,
-                  whether you need to build a new strategic plan for the school business post Covid-19, decide on a new
-                  ELT product or promotion campaign, or simply take stock together of the past academic year and look to
-                  the year ahead. It’s also a time to get to know the team better, and … have lots of fun. <br /><br />
-                  click <a href="/blogs/Learning with your Team - the Awayday.html">here</a> to learn more about
-                  awaydays.
-
+                  Our School Leaders Training program is designed to empower educational leaders with the skills, knowledge, and
+                  strategies necessary to drive positive change within their schools. This comprehensive program focuses on fostering
+                  effective leadership practices, enhancing communication skills, and promoting a collaborative school culture.
+                  Participants will engage in interactive workshops, case studies, and peer discussions that address real-world challenges
+                  faced by school leaders today.
                 </div>
               </div>
             </div>

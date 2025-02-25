@@ -11,3 +11,7 @@ deployment:
     - /bin/cp -R scss $DEPLOYPATH
     - /bin/cp -R static $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R blogs $DEPLOYPATH
+    - /bin/cp -R about.html $DEPLOYPATH
+    - /bin/cp -R blog.html $DEPLOYPATH
+    - /bin/cp -R gallery.html $DEPLOYPATH    

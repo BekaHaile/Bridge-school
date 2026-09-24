@@ -91,7 +91,6 @@
       max-width: 100%;
       min-width: 100px;
       min-height: 100px;
-      /* object-fit: contain; */
     }
 
     .img-fluid-modal {
@@ -107,69 +106,106 @@
     }
 
     .client_carousel {
-      position: relative;
+      width: 100%;
       overflow: hidden;
     }
 
-    .client_carousel_slider {
+    .logos {
+      overflow: hidden;
+      padding: 20px 0;
+      white-space: nowrap;
       position: relative;
-      display: flex;
-      align-items: center;
-      width: 80vw;
-      height: 300px;
+      margin-bottom: 15px;
     }
 
-    .client_list {
+    /* Fade on both edges */
+    .logos::before,
+    .logos::after {
+      content: "";
       position: absolute;
-      width: 400%;
-      top: 50%;
+      top: 0;
+      width: 120px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* Left fade */
+    .logos::before {
       left: 0;
-      transform: translateY(-50%);
-      /* display: flex; */
-      display: grid;
-      grid-auto-flow: column;
-      /* row-gap: 20px; */
-      column-gap: 24px;
-      grid-template-rows: auto auto;
-      align-items: center;
-      justify-content: space-around;
-
+      background: linear-gradient(to right,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0));
     }
 
-    .client_item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 240px;
-      height: 140px;
-      padding: 20px;
+    /* Right fade */
+    .logos::after {
+      right: 0;
+      background: linear-gradient(to left,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0));
     }
 
-    .client_item_lg {
-      display: flex;
+    .logo_items {
+      display: inline-flex;
       align-items: center;
-      justify-content: center;
-      width: 240px;
-      height: 140px;
-      padding: 0px;
+      gap: 50px;
+      animation: slides 45s linear infinite;
+      will-change: transform;
     }
 
-    @media only screen and (max-width: 900px) {
-      .client_list {
-        width: 600%;
+    @keyframes slides {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-100%);
       }
     }
 
-    @media only screen and (max-width: 600px) {
-      .client_list {
-        width: 1000%;
+    .logo_items img {
+      display: block;
+
+      height: 70px;
+      width: auto;
+
+      max-width: 160px;
+
+      object-fit: contain;
+    }
+
+
+    .logos:nth-child(2) .logo_items {
+      animation-duration: 50s;
+    }
+
+    .logos:hover .logo_items {
+      animation-play-state: paused;
+    }
+
+
+    /* Mobile */
+    @media (max-width: 768px) {
+
+      .logo_items {
+        gap: 30px;
+      }
+
+      .logo_items img {
+        height: 55px;
+        max-width: 130px;
       }
     }
 
-    @media only screen and (max-width: 400px) {
-      .client_list {
-        width: 1500%;
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+
+      .logo_items {
+        animation: none;
       }
+
     }
   </style>
 </head>
@@ -581,77 +617,16 @@
   <section class="page-section" id="portfolio">
     <!-- <section class="page-section" id="services"></section> -->
     <div class="container">
-      <div class="row mb-4">
+      <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Programmes</h2>
           <h3 class="section-subheading text-muted">
             Expect only the best from Bridge
           </h3>
-          <br />
-          <h3>Coaching programmes</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid-portfolio" src="img/portfolio/coaching_2.png" alt="" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Coaching</h4>
-            <p class="text-muted">Unlocking your potential</p>
-            <a data-toggle="modal" href="#portfolioModal5">
-              <button type="button" class="btn btn-success mt-3" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div>
-        <!-- <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid-portfolio" src="img/portfolio/team-coaching.png" alt="" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Team Coaching</h4>
-            <p class="text-muted">Building High-Performing Teams</p>
-            <a data-toggle="modal" href="#portfolioModal9">
-              <button type="button" class="btn btn-success mt-3" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
-        </div> -->
-        <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid-portfolio" src="img/portfolio/ldc.png" alt="" />
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lead, Develop, Care</h4>
-            <p class="text-muted">Leadership framework</p>
-            <a data-toggle="modal" href="#portfolioModal10">
-              <button type="button" class="btn btn-success mt-3" style="background-color: black">
-                Detail
-              </button>
-            </a>
-          </div>
         </div>
       </div>
 
-      <div class="row mb-4 mt-4">
+      <div class="row mb-4">
         <div class="col-lg-12 text-center">
           <h3>Programme for adults</h3>
         </div>
@@ -769,7 +744,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -780,7 +755,7 @@
           <div class="portfolio-caption">
             <h4>Reading Champions</h4>
             <p class="text-muted">Raising a generation of children <br /> who enjoy reading!</p>
-            <a data-toggle="modal" href="#portfolioModal6">
+            <a data-toggle="modal" href="#portfolioModal5">
               <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
@@ -796,7 +771,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -807,7 +782,7 @@
           <div class="portfolio-caption">
             <h4>Teacher training</h4>
             <p class="text-muted">Empowering educators</p>
-            <a data-toggle="modal" href="#portfolioModal7">
+            <a data-toggle="modal" href="#portfolioModal6">
               <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
@@ -815,7 +790,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item" style="text-align: center">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -826,7 +801,7 @@
           <div class="portfolio-caption">
             <h4>School leadership<br />training</h4>
             <p class="text-muted">Shaping the Future of Education</p>
-            <a data-toggle="modal" href="#portfolioModal8">
+            <a data-toggle="modal" href="#portfolioModal7">
               <button type="button" class="btn btn-success mt-3" style="background-color: black">
                 Detail
               </button>
@@ -846,105 +821,93 @@
           <h3 class="section-subheading text-muted">
             Meet our happy clients
           </h3>
-          <!-- <h3>Our Clients</h3>
-          <p>Meet our happy clients</p> -->
         </div>
+
         <div class="client_carousel">
-          <div class="client_carousel_slider">
-            <ul class="client_list">
-              <li>
-                <img src="img/clients/mastercard foundation.png" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/Who.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/us embassy.jpg" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/giz.png" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/amcham.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/CST.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/cawee.jpg" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/ethio post.jpg" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/Gain.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/save the children.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/plan international.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/Fawe.png" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/world vision.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/Compassion.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/bethany-christian-services.jpg" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/Excellerent.png" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/lersha.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/Gallani Coffee.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/Haile_Resorts.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/getfam.jpg" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/capital-hotel.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/marriott-hotel.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/century-real-estate.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/berhan-insurance.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/espbc.png" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/moenco.png" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/eeig.png" class="img-fluid client_item" />
-              </li>
-              <li>
-                <img src="img/clients/sandford.jpg" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/cambridge.png" class="img-fluid client_item_lg" />
-              </li>
-              <li>
-                <img src="img/clients/five star.jpg" class="img-fluid client_item" />
-              </li>
-            </ul>
+
+          <!-- ROW 1 -->
+          <div class="logos">
+            <div class="logo_items">
+              <img src="img/clients/mastercard foundation.png" alt="Mastercard Foundation">
+              <img src="img/clients/Who.png" alt="WHO">
+              <img src="img/clients/us embassy.jpg" alt="US Embassy">
+              <img src="img/clients/giz.png" alt="GIZ">
+              <img src="img/clients/amcham.png" alt="AmCham">
+              <img src="img/clients/CST.png" alt="CST">
+              <img src="img/clients/cawee.jpg" alt="CAWEE">
+              <img src="img/clients/ethio post.jpg" alt="Ethio Post">
+              <img src="img/clients/Gain.png" alt="GAIN">
+              <img src="img/clients/save the children.png" alt="Save the Children">
+              <img src="img/clients/plan international.png" alt="Plan International">
+              <img src="img/clients/Fawe.png" alt="FAWE">
+              <img src="img/clients/world vision.png" alt="World Vision">
+              <img src="img/clients/Compassion.png" alt="Compassion">
+              <img src="img/clients/bethany-christian-services.jpg" alt="Bethany Christian Services">
+            </div>
+            <!-- Exact duplicate -->
+            <div class="logo_items">
+              <img src="img/clients/mastercard foundation.png" alt="">
+              <img src="img/clients/Who.png" alt="">
+              <img src="img/clients/us embassy.jpg" alt="">
+              <img src="img/clients/giz.png" alt="">
+              <img src="img/clients/amcham.png" alt="">
+              <img src="img/clients/CST.png" alt="">
+              <img src="img/clients/cawee.jpg" alt="">
+              <img src="img/clients/ethio post.jpg" alt="">
+              <img src="img/clients/Gain.png" alt="">
+              <img src="img/clients/save the children.png" alt="">
+              <img src="img/clients/plan international.png" alt="">
+              <img src="img/clients/Fawe.png" alt="">
+              <img src="img/clients/world vision.png" alt="">
+              <img src="img/clients/Compassion.png" alt="">
+              <img src="img/clients/bethany-christian-services.jpg" alt="">
+            </div>
           </div>
+
+
+          <!-- ROW 2 -->
+          <div class="logos">
+            <div class="logo_items">
+              <img src="img/clients/Excellerent.png" alt="Excellerent">
+              <img src="img/clients/lersha.png" alt="Lersha">
+              <img src="img/clients/Gallani Coffee.png" alt="Gallani Coffee">
+              <img src="img/clients/Haile_Resorts.png" alt="Haile Resorts">
+              <img src="img/clients/getfam.jpg" alt="Getfam">
+              <img src="img/clients/capital-hotel.png" alt="Capital Hotel">
+              <img src="img/clients/marriott-hotel.png" alt="Marriott">
+              <img src="img/clients/century-real-estate.png" alt="Century Real Estate">
+              <img src="img/clients/berhan-insurance.png" alt="Berhan Insurance">
+              <img src="img/clients/espbc.png" alt="ESPBC">
+              <img src="img/clients/moenco.png" alt="MOENCO">
+              <img src="img/clients/eeig.png" alt="EEIG">
+              <img src="img/clients/sandford.jpg" alt="Sandford">
+              <img src="img/clients/cambridge.png" alt="Cambridge">
+              <img src="img/clients/five star.jpg" alt="Five Star">
+            </div>
+
+            <!-- Exact duplicate -->
+            <div class="logo_items">
+              <img src="img/clients/Excellerent.png" alt="">
+              <img src="img/clients/lersha.png" alt="">
+              <img src="img/clients/Gallani Coffee.png" alt="">
+              <img src="img/clients/Haile_Resorts.png" alt="">
+              <img src="img/clients/getfam.jpg" alt="">
+              <img src="img/clients/capital-hotel.png" alt="">
+              <img src="img/clients/marriott-hotel.png" alt="">
+              <img src="img/clients/century-real-estate.png" alt="">
+              <img src="img/clients/berhan-insurance.png" alt="">
+              <img src="img/clients/espbc.png" alt="">
+              <img src="img/clients/moenco.png" alt="">
+              <img src="img/clients/eeig.png" alt="">
+              <img src="img/clients/sandford.jpg" alt="">
+              <img src="img/clients/cambridge.png" alt="">
+              <img src="img/clients/five star.jpg" alt="">
+
+            </div>
+          </div>
+
         </div>
+
       </div>
     </div>
   </section>
@@ -1188,36 +1151,35 @@
         <!--Grid column-->
       </div>
 
-       <div style="margin-left: 5%; margin-top: 100px">
-                <p style="color: white; size: 20px" class="text-left">
-                    Bridge Professional Development Centre is located at Sarbet, Addis Ababa, on
-                    the sixth floor of the Ethiopian Graduate School of Theology (EGST) Building.
-                </p>
-            </div>
+      <div style="margin-left: 5%; margin-top: 100px">
+        <p style="color: white; size: 20px" class="text-left">
+          Bridge Professional Development Centre is located at Sarbet, Addis Ababa, on
+          the first floor of the Ethiopian Graduate School of Theology (EGST) Building.
+        </p>
+      </div>
 
-            <div class="row" style="margin-left: 4%; margin-right: 4%;">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <img class="img-responsive" src="img/location/EGST Building.jpg" width="600" height="450"
-                                    style="width: 100%" />
-                            </div>
-                            <div class="form-group"></div>
-                            <div class="form-group"></div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4815419415095!2d38.80917351478653!3d9.019760593527295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85ce7aa14399%3A0x4e3f73427725afd7!2sBridge%20School%20of%20languages!5e0!3m2!1sen!2set!4v1622093945371!5m2!1sen!2set"
-                                    width="100%" height="450" style="border: 0" allowfullscreen=""
-                                    loading="lazy"></iframe>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
+      <div class="row" style="margin-left: 4%; margin-right: 4%;">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <img class="img-responsive" src="img/location/EGST Building.jpg" width="600" height="450"
+                  style="width: 100%" />
+              </div>
+              <div class="form-group"></div>
+              <div class="form-group"></div>
             </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4815419415095!2d38.80917351478653!3d9.019760593527295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85ce7aa14399%3A0x4e3f73427725afd7!2sBridge%20School%20of%20languages!5e0!3m2!1sen!2set!4v1622093945371!5m2!1sen!2set"
+                  width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -1462,70 +1424,6 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <div class="modal-body" style="text-align: left">
-                <h4>Coaching</h4>
-                <span class="text-muted">unlocking your potential</span><br /><br />
-                We have certified Life and Leadership Coaches who are members of International Coaching Federation
-                (ICF). Most of them have more than a decade’s experience helping individuals and teams achieve their
-                goals.
-                We have coaches based in different parts of the world.<br /><br /> We offer the coaching via zoom or
-                face to
-                face in our office in Gurd Shola. We offer one on one, group and team coaching in the following areas:
-                Executive
-                Coaching, Career Coaching, Relationship Coaching, and Personal Coaching.<br /><br />
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center body mb-4">
-            <ul class="col-lg-7 image-grid">
-              <li>
-                <figure>
-                  <img src='img/gallery/programs/coaching/a.jpg' alt=''>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src='img/gallery/programs/coaching/b.jpg' alt=''>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src='img/gallery/programs/coaching/c.jpg' alt=''>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src='img/gallery/programs/coaching/d.jpg' alt=''>
-                </figure>
-              </li>
-            </ul>
-          </div>
-          <div class="row justify-content-center body mb-4">
-            <ul class="col-lg-7 image-grid ml-3">
-              <li>
-                <figure>
-                  <img style="aspect-ratio: 4 / 2;" src='img/gallery/programs/coaching/e.jpg' alt=''>
-                </figure>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body" style="text-align: left">
                 <h4>Reading Champions</h4>
                 <span class="text-muted">Raising a generation of children who enjoy children!</span><br /><br />
 
@@ -1621,8 +1519,8 @@
     </div>
   </div>
 
-  <!-- Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1687,8 +1585,8 @@
     </div>
   </div>
 
-  <!-- Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 7 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1748,69 +1646,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Modal 9 -->
-  <!-- <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="text-align: left">
-                  <h4>Team Coaching</h4>
-                  <span class="text-muted">Building High-Performing Teams</span><br /><br />
-                  We have certified Life and Leadership Coaches who are members of International Coaching Federation
-                  (ICF). Most of them have more than a decade’s experience helping individuals and teams achieve their goals.
-                  We have coaches based in different parts of the world.<br /><br /> We offer the coaching via zoom or face to
-                  face in our office in Gurd Shola. We offer one on one, group and team coaching in the following areas: Life
-                  and Leadership Coaching, Financial Coaching and Transition Coaching.<br /><br />
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-  <!-- Modal 10 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body" style="text-align: left">
-                <h4>Lead, Develop, Care</h4>
-                <span class="text-muted">Leadership framework</span><br /><br />
-                In today’s fast-moving and complex world, effective leadership requires more than just managing tasks—it
-                demands
-                clarity, compassion, and the ability to develop others. The *Lead, Develop, Care* coaching program is
-                designed to help
-                leaders focus on what truly matters: building momentum, nurturing talent, and creating a culture of
-                trust and care.
-                Through a blend of practical strategies and personalized coaching, this program equips you to lead with
-                intention,
-                support growth in others, and foster a thriving, resilient team environment. Whether you're an emerging
-                leader or a
-                seasoned executive, this program will elevate your leadership journey and strengthen your impact.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
@@ -1827,92 +1662,6 @@
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
 
-
-  <!-- changing image script -->
-  <!-- <script>
-        var bgImageArray = ["img/header-bg2.jpg","img/header-bg3.jpg","img/header-bg.jpg"],
-        secs = 5;
-        bgImageArray.forEach(function(img){
-            new Image().src = img; 
-        });
-
-        function backgroundSequence() {
-          window.clearTimeout();
-          var k = 0;
-          for (i = 0; i < bgImageArray.length; i++) {
-            setTimeout(function(){ 
-              document.getElementById("masthead").style.background = "url(" + bgImageArray[k] + ") no-repeat center center fixed";
-              document.getElementById("masthead").style.backgroundSize ="cover";
-            if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
-            }, (secs * 1000) * i)	
-          }
-        }
-        backgroundSequence();
-      </script> -->
-
-  <script>
-    "use strict";
-
-    function carousel() {
-      let carouselSlider = document.querySelector(".client_carousel_slider");
-      let list = document.querySelector(".client_list");
-      let item = document.querySelectorAll(".client_item");
-      let list2;
-
-      const speed = 1;
-
-      const width = list.offsetWidth;
-      let x = 0;
-      let x2 = width;
-
-      function clone() {
-        list2 = list.cloneNode(true);
-        carouselSlider.appendChild(list2);
-        list2.style.left = `${width}px`;
-      }
-
-      function moveFirst() {
-        x -= speed;
-
-        if (width >= Math.abs(x)) {
-          list.style.left = `${x}px`;
-        } else {
-          x = width;
-        }
-      }
-
-      function moveSecond() {
-        x2 -= speed;
-
-        if (list2.offsetWidth >= Math.abs(x2)) {
-          list2.style.left = `${x2}px`;
-        } else {
-          x2 = width;
-        }
-      }
-
-      function hover() {
-        clearInterval(a);
-        clearInterval(b);
-      }
-
-      function unhover() {
-        a = setInterval(moveFirst, 10);
-        b = setInterval(moveSecond, 10);
-      }
-
-      clone();
-
-      let a = setInterval(moveFirst, 10);
-      let b = setInterval(moveSecond, 10);
-
-      carouselSlider.addEventListener("mouseenter", hover);
-      carouselSlider.addEventListener("mouseleave", unhover);
-    }
-
-    carousel();
-
-  </script>
   </div>
 </body>
 

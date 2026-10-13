@@ -418,46 +418,48 @@ header.masthead .intro-text .intro-heading {
 }
 
 #partner ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #partner li {
-  padding: 0 16px;
+    padding: 0 32px;
 }
 
 #partner img {
-  display: block;
-  width: 100%;
-  object-fit: contain;
-}
-
-.partner1, .partner4, .partner6{
-  padding: 15%;
-}
-
-.partner2{
-  padding: 10%;
+    display: block;
+    height: 70px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
 }
 
 @media (max-width:992px) {
-  #partner ul {
-      grid-template-columns: auto auto auto;
+
+    #partner li {
+        padding: 0 24px;
     }
+
     #partner img {
-      width: 80%;
+        height: 60px;
+        max-width: 150px;
     }
 }
 
 @media (max-width:768px) {
-  #partner ul {
-      grid-template-columns: auto auto;
+
+    #partner li {
+        padding: 16px 24px;
     }
+
     #partner img {
-      width: 75%;
+        height: 55px;
+        max-width: 130px;
     }
 }
 
